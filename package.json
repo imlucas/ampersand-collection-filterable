@@ -1,0 +1,53 @@
+{
+  "name": "ampersand-collection-filterable",
+  "description": "Simple filterable ampersand collections",
+  "author": "Lucas Hrabovsky <hrabovsky.lucas@gmail.com>",
+  "version": "0.0.0",
+  "bugs": "https://github.com/mongodb-js/ampersand-collection-filterable/issues",
+  "homepage": "https://github.com/mongodb-js/ampersand-collection-filterable",
+  "repository": "git://github.com/mongodb-js/ampersand-collection-filterable.git",
+  "license": "MIT",
+  "keywords": [
+    "mongodb-js",
+    "ampersand"
+  ],
+  "scripts": {
+    "test-ci": "zuul -- test/index.test.js",
+    "start": "zuul --local 3001 --open -- test/index.test.js",
+    "test": "zuul --phantom -- /test/index.test.js",
+    "lint": "jshint",
+    "format": "jsfmt",
+    "check-missing": "dependency-check ./ --missing",
+    "check-unused": "dependency-check ./ --unused"
+  },
+  "precommit": [
+    "format",
+    "lint",
+    "check-unused",
+    "check-missing",
+    "test"
+  ],
+  "main": "ampersand-collection-filterable.js",
+  "dependencies": {
+    "amp-debounce": "^1.0.1",
+    "amp-difference": "^1.0.1",
+    "amp-each": "^1.0.1",
+    "amp-filter": "^1.0.1",
+    "amp-union": "^1.0.0",
+    "component-raf": "^1.2.0",
+    "debug": "^2.1.2"
+  },
+  "devDependencies": {
+    "ampersand-collection": "^1.4.1",
+    "ampersand-state": "^4.4.5",
+    "dependency-check": "^2.2.2",
+    "esformatter-braces": "^1.0.0",
+    "esformatter-quotes": "^1.0.0",
+    "esformatter-semicolons": "^1.0.3",
+    "jsfmt": "^0.4.1",
+    "jshint": "^2.6.3",
+    "mocha": "^2.1.0",
+    "phantomjs": "^1.9.15",
+    "zuul": "^1.19.0"
+  }
+}
