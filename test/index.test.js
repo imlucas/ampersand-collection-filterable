@@ -38,6 +38,14 @@ var bag = new CandyCollection([
 ]);
 
 describe('ampersand-collection-filterable', function() {
+  it('should not puke', function() {
+    bag._initFilters();
+    bag.add({
+      id: 7,
+      name: 'Reese\'s Peanut Butter Cup'
+    });
+    bag.remove(7);
+  });
   it('should filter out candy that does not start with `T`', function(done) {
     bag.once('change:length', function(newLength) {
       assert.equal(newLength, 2);
