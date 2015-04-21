@@ -1,6 +1,6 @@
 # ampersand-collection-filterable
 
-[![build status](https://secure.travis-ci.org/imlucas/ampersand-collection-filterable.png)](http://travis-ci.org/imlucas/ampersand-collection-filterable)
+[![build status](https://secure.travis-ci.org/mongodb-js/ampersand-collection-filterable.png)](http://travis-ci.org/mongodb-js/ampersand-collection-filterable)
 
 Simple filterable ampersand collections
 
