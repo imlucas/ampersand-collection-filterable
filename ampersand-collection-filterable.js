@@ -1,21 +1,17 @@
-var _debounce = require('amp-debounce'),
-  _filter = require('amp-filter'),
-  _union = require('amp-union'),
-  _difference = require('amp-difference'),
-  _each = require('amp-each'),
-  raf = require('component-raf'),
-  debug = require('debug')('ampersand-collection-filterable');
+var _debounce = require('lodash.debounce');
+var _filter = require('lodash.filter');
+var _union = require('lodash.union');
+var _difference = require('lodash.difference');
+var _each = require('lodash.foreach');
+var debug = require('debug')('ampersand-collection-filterable');
 
 module.exports = {
   _filtersListening: false,
   _initFilters: function() {
     if (this._filtersListening === false) {
-      // this.listenTo(this, 'add sync remove reset', this._refilter);
-
       this.listenTo(this, 'add', _debounce(this._refilterForAdd));
       this.listenTo(this, 'remove', _debounce(this._refilterForRemove));
       this.listenTo(this, 'reset sync', _debounce(this._refilterAll));
-
       this._filtersListening = true;
     }
   },
@@ -69,7 +65,7 @@ module.exports = {
     this._lengthChanged();
   },
   _lengthChanged: function() {
-    raf(function() {
+    process.nextTick(function() {
       this.trigger('change:length', this.length);
     }.bind(this));
   },
