@@ -2,7 +2,7 @@
   "name": "ampersand-collection-filterable",
   "description": "Simple filterable ampersand collections",
   "author": "Lucas Hrabovsky <hrabovsky.lucas@gmail.com>",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "bugs": "https://github.com/mongodb-js/ampersand-collection-filterable/issues",
   "homepage": "https://github.com/mongodb-js/ampersand-collection-filterable",
   "repository": "git://github.com/mongodb-js/ampersand-collection-filterable.git",
