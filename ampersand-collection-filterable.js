@@ -9,6 +9,7 @@ module.exports = {
   _filtersListening: false,
   _initFilters: function() {
     if (this._filtersListening === false) {
+      this._filtered = [];
       this.listenTo(this, 'add', _debounce(this._refilterForAdd));
       this.listenTo(this, 'remove', _debounce(this._refilterForRemove));
       this.listenTo(this, 'reset sync', _debounce(this._refilterAll));

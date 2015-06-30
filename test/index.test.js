@@ -93,4 +93,16 @@ describe('ampersand-collection-filterable', function() {
       done();
     }, 100);
   });
+
+  describe('Regressions', function(){
+    it('should maintain separate states for different collections #1', function(){
+      var otherBag = new CandyCollection([
+        {
+          id: 7,
+          name: '100 Grand'
+        }
+      ]);
+      assert.deepEqual(otherBag._filtered, []);
+    });
+  });
 });
