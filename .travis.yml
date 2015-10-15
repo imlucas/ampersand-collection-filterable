@@ -4,5 +4,5 @@ node_js:
 script: npm run test-ci
 env:
   global:
-  - secure: XBnViaazZESC1wNmg26bmoxBzGFD7EdjWsFMOvanEyXQl+YRzs1rlfBhaqrAEhEAGEG00+jFO91BXgyJFwBV/1rfczwdCoxLWYChBSSKBdZmTH8QuQM+kPKQivQqLsa+uEdh2ihNmY7AlIMHIYA1aEM3u7i4uqUAX/ILsy4VecY=
-  - secure: YSiQOOjbZSGv/m8udKSpl9bTLlwX2p41K5O7KTTJ9HkwPjhm0DwX1Bgr7h1afSlQf3gmv5319MICqxltdmc3chPagUDvr/VWcbi1+UAry1Oz0q+DDwIO9ZR9e3N67TXXhUl6LPC97s02MLxET3W42i5v/QCfkB0ANOd6bLvGv4Y=
+  - secure: VCvKdw3cjfEqDemZogbmcUGQHGfB5QTe/452satT4YePsxdnNOnL3LzuUNd4t7AQexqwREVZ+Y2pDP3z6xuIUN9bNeqDvRA0dvZEaaTTuYQqKH4DFL7WMxyBu7G86K4fiH8ftWiHkd6Wt6/aePHxTNAyj3DoFg0+tbKR2DSIK40=
+  - secure: WzzRJmyZ2UJ6RaJaTe9crrYQBV8HU4qLWHbCX7QmRJqydkae6+3M92IZfXVNcUj0YMl82k5AYiDAmXRsdZfJrr6g6A8C443nZylbDwSQ6K63wIZvNkYBcyiaexWmNioLw6gCgg4k/H9pPagdzoX9aCqMhLfpMEKLMYsIkwuBQDo=
