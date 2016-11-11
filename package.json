@@ -30,23 +30,23 @@
   "main": "ampersand-collection-filterable.js",
   "dependencies": {
     "debug": "^2.2.0",
-    "lodash.debounce": "^3.1.1",
-    "lodash.difference": "^3.2.2",
-    "lodash.filter": "^3.1.1",
-    "lodash.foreach": "^3.0.3",
-    "lodash.union": "^3.1.0"
+    "lodash.debounce": "^4.0.8",
+    "lodash.difference": "^4.5.0",
+    "lodash.filter": "^4.6.0",
+    "lodash.foreach": "^4.5.0",
+    "lodash.union": "^4.6.0"
   },
   "devDependencies": {
-    "ampersand-collection": "^1.4.5",
-    "ampersand-state": "^4.5.6",
+    "ampersand-collection": "^2.0.0",
+    "ampersand-state": "^5.0.2",
     "dependency-check": "^2.5.0",
     "esformatter-braces": "^1.2.1",
     "esformatter-quotes": "^1.0.2",
     "esformatter-semicolons": "^1.0.3",
-    "jsfmt": "^0.4.1",
+    "jsfmt": "^0.5.3",
     "jshint": "^2.8.0",
-    "mocha": "^2.2.5",
-    "phantomjs": "^1.9.17",
+    "mocha": "^3.1.2",
+    "phantomjs": "^2.1.7",
     "zuul": "^3.2.0"
   }
 }
