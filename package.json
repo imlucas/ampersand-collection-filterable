@@ -43,7 +43,7 @@
     "esformatter-braces": "^1.2.1",
     "esformatter-quotes": "^1.0.2",
     "esformatter-semicolons": "^1.0.3",
-    "jsfmt": "^0.4.1",
+    "jsfmt": "^0.5.3",
     "jshint": "^2.8.0",
     "mocha": "^2.2.5",
     "phantomjs": "^1.9.17",
