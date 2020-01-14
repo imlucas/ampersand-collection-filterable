@@ -39,7 +39,7 @@
   "devDependencies": {
     "ampersand-collection": "^1.4.5",
     "ampersand-state": "^4.5.6",
-    "dependency-check": "^2.5.0",
+    "dependency-check": "^4.1.0",
     "esformatter-braces": "^1.2.1",
     "esformatter-quotes": "^1.0.2",
     "esformatter-semicolons": "^1.0.3",
