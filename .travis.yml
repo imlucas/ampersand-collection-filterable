@@ -1,7 +1,14 @@
+sudo: false
+diost: bionic
 language: node_js
 node_js:
-- '0.12'
-script: npm run test-ci
+  - 12.4.0
+script: 
+  - npm run check
+  - npm test
+cache: npm
+install:
+  - npm ci
 env:
   global:
   - secure: VCvKdw3cjfEqDemZogbmcUGQHGfB5QTe/452satT4YePsxdnNOnL3LzuUNd4t7AQexqwREVZ+Y2pDP3z6xuIUN9bNeqDvRA0dvZEaaTTuYQqKH4DFL7WMxyBu7G86K4fiH8ftWiHkd6Wt6/aePHxTNAyj3DoFg0+tbKR2DSIK40=

@@ -12,21 +12,9 @@
     "ampersand"
   ],
   "scripts": {
-    "test-ci": "zuul -- test/index.test.js",
-    "start": "zuul --local 3001 --open -- test/index.test.js",
-    "test": "zuul --phantom -- /test/index.test.js",
-    "lint": "jshint",
-    "format": "jsfmt",
-    "check-missing": "dependency-check ./ --missing",
-    "check-unused": "dependency-check ./ --unused"
+    "test": "mocha",
+    "check": "echo soon"
   },
-  "precommit": [
-    "format",
-    "lint",
-    "check-unused",
-    "check-missing",
-    "test"
-  ],
   "main": "ampersand-collection-filterable.js",
   "dependencies": {
     "debug": "^2.2.0",
@@ -39,14 +27,6 @@
   "devDependencies": {
     "ampersand-collection": "^1.4.5",
     "ampersand-state": "^4.5.6",
-    "dependency-check": "^2.5.0",
-    "esformatter-braces": "^1.2.1",
-    "esformatter-quotes": "^1.0.2",
-    "esformatter-semicolons": "^1.0.3",
-    "jsfmt": "^0.4.1",
-    "jshint": "^2.8.0",
-    "mocha": "^2.2.5",
-    "phantomjs": "^1.9.17",
-    "zuul": "^3.2.0"
+    "mocha": "^2.2.5"
   }
 }
