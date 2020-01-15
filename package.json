@@ -22,7 +22,7 @@
   },
   "main": "ampersand-collection-filterable.js",
   "dependencies": {
-    "debug": "^2.2.0",
+    "debug": "^4.1.1",
     "lodash.debounce": "^3.1.1",
     "lodash.difference": "^4.5.0",
     "lodash.filter": "^4.6.0",
