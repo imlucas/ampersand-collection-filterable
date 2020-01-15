@@ -13,7 +13,12 @@
   ],
   "scripts": {
     "test": "mocha",
-    "check": "echo soon"
+    "check": "mongodb-js-precommit test/*.js ampersand-collection-filterable.js"
+  },
+  "dependency-check": {
+    "entries": [
+      "ampersand-collection-filterable.js"
+    ]
   },
   "main": "ampersand-collection-filterable.js",
   "dependencies": {
@@ -27,6 +32,7 @@
   "devDependencies": {
     "ampersand-collection": "^1.4.5",
     "ampersand-state": "^4.5.6",
-    "mocha": "^7.0.0"
+    "mocha": "^7.0.0",
+    "mongodb-js-precommit": "^2.1.0"
   }
 }
